@@ -19,7 +19,7 @@ impl Report {
                 } else if is_increasing == None {
                     is_increasing = Some(false);
                 }
-            } else if (i > 0 && self.report[i] > self.report[i - 1]) {
+            } else if i > 0 && self.report[i] > self.report[i - 1] {
                 if is_increasing == Some(false) {
                     return false;
                 } else if is_increasing == None {
